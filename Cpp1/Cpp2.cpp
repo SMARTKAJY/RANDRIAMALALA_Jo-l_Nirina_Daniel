@@ -1,26 +1,30 @@
 #include <iostream>
-#include <math.h>
-    
-float hyp(int Long, int larg){
-    return sqrt(a*a + b*b);
+#include <cmath>
+
+float hyp(int a, int b) {
+    return sqrt(a * a + b * b);
 }
-int main(){
-    int a,b,c;
-    std::cout<<"Entre le premier valeur : \n ";
-    std::cin<<a;
-    std::cout<<" Le second valeut please";
-    std::cin<<b;
-    std::cout<<"La troisieme et derniere";
-    std::cin<<c;
-    if(a==b==c){
-        std::cout<<"C'est un triangle equilateral car les 3 côte sont ego /n ";
-    }else if(a==b || b==c || c == a){
-        std::cout<<"C'est un triangle isocel car il y a deux cote de meme mesure /n";
-    }else{
-        std::cout<<"C'est un triangle scalene /n ";
+
+int main() {
+    int a, b, c;
+    std::cout << "Entrez la première valeur : ";
+    std::cin >> a;
+    std::cout << "Entrez la seconde valeur : ";
+    std::cin >> b;
+    std::cout << "Entrez la troisième valeur : ";
+    std::cin >> c;
+
+    if (a == b && b == c) {
+        std::cout << "C'est un triangle équilatéral car les 3 côtés sont égaux.\n";
+    } else if (a == b || b == c || c == a) {
+        std::cout << "C'est un triangle isocèle car il y a deux côtés de même mesure.\n";
+    } else {
+        std::cout << "C'est un triangle scalène.\n";
     }
-    if(a==hyp(b,c)|| b == hyp(a,c)|| c== hyp(a,b)){
-        std::cout<<"et aussi un triangle rectangle /n";
+
+    if (a == hyp(b, c) || b == hyp(a, c) || c == hyp(a, b)) {
+        std::cout << "Et aussi un triangle rectangle.\n";
     }
-    returne 0;
+
+    return 0;
 }
