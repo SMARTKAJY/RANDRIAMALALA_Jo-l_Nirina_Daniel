@@ -1,0 +1,29 @@
+1. Algorithme de recherche
+        - S'assurer que le dictionnaire est trié
+        - Prendre le dictionnaire
+        - Comparer le mot au milieu du dictionnaire avec le mot recherchee
+                - Si c'est le mot recherché, on s'arrête
+                - Si le mot recherché est avant ce mot, on le recherche sur a première moitié du dictionnaire
+                - Si le mot recherché est après ce mot , on le recherche sur l' autre  moitié du dictionnaire
+        - Repeter la division en boucle jusqu'à ce que le mot soit trouvé
+
+
+        Comparaison
+        Facilité :
+                séquentielle : simple
+                Dicothomie : complexe
+        Condition: 
+                séquentielle : aucune
+                Dicothomie : tri du dictionnaire requis
+        Temps de recherche: 
+                séquentielle : long
+                Dicothomie : rapide
+
+
+2. Algorithme de dénombrement 
+        En general,
+        - Sélectionner la pièce de plus grande valeur disponible
+        - Calculer le montant restant à rendre après avoir pris cette pièce
+                - Si la pièce sélectionnée est inférieure ou égale au montant restant, l’utiliser
+                - Sinon, choisir la pièce de valeur immédiatement inférieure
+        - Répéter ce processus jusqu'à ce que le montant souhaité soit obtenu
